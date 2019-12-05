@@ -22,7 +22,7 @@ class ExercisesTest extends FlatSpec with Matchers {
   }
 
   "fold" should "sum all elements starting with the init value " in {
-    Exercises.fold(List(1,2,3,5),"10")(_+_) shouldEqual 21
+    Exercises.fold(List(1,2,3,5),10)(_+_) shouldEqual 21
   }
 
   "reverse" should "return reveres list with all elements starting with last element " in {
